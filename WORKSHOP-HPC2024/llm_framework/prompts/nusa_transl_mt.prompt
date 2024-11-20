@@ -1,0 +1,71 @@
+{% block instruction %}
+{{instruction_start}}
+Terjemahno ukara ing Basa Indonesia iki dadi ukara padanane ing Basa Jawa. 
+{{instruction_end}}
+{% endblock %}
+
+=====
+
+{# example 1 #}
+{{input_start}}
+Ukara ing Basa Indonesia: "Jon Bon Jovi memiliki restoran bernama 'Soul Kitchen', di mana semua orang boleh makan apa saja dan hanya membayarnya jika mereka mau."
+Terjemahane ing Basa Jawa:
+{{input_end}}
+{{output_start}}
+Jon Bon Jovi ndhuweni restoran jenenge 'Soul Kitchen' sing ndi kabeh uwong oleh mangan apa wae lan mung mbayar yen dhewekke gelem.
+{{output_end}}
+
+=====
+
+{# example 2 #}
+{{input_start}}
+Ukara ing Basa Indonesia:"Tidak ada yg berkesan.. AC kurang dingin Snack box kosong Kunci kamar tidak berfungsi, harus memakai kunci master dari resepsionis Tissu toilet habis Air panas kamar mandi tidak berfungsi."
+Terjemahane ing Basa Jawa:
+{{input_end}}
+{{output_start}}
+Ora ana sing nyenengke. AC kurang adhem Klethikan e kosong Kunci kamar ora isa dinggo, kudu nganggo kunci master seka resepsionis Tisu kulah entek Banyu panas neng kulah ora murup.
+{{output_end}}
+
+=====
+
+{# example 3 #}
+{{input_start}}
+Ukara ing Basa Indonesia:"Ketika liat anak keputih korban kebakaran, lingkungan mereka ga mendukung. Adik2 nya bener2 kek yg berani sama org yg lebih tua, gaada sopan santunnya. Melihat kondisi sprt itu ada yg bilang anak jaman sekarang emg bandel2 gitu. No guys, kalo lingkungan mereka baik pst ga gitu."
+Terjemahane ing Basa Jawa:
+{{input_end}}
+{{output_start}}
+Nalika ndhelok bocah-bocah kulit putih sing dadi korban kobongan, lingkungane dhewekke ora ndhukung. Adhi-adhine pancen wani karo wong tuwa, ora ana tata krama. Weruh kahanan sing kaya mangkono, ana sing ngarani bocah jaman saiki pancen bandel. Ora cah, yen lingkungane apik, apa kaya ngono?
+{{output_end}}
+
+=====
+
+{# example 4 #}
+{{input_start}}
+Ukara ing Basa Indonesia:"Mohamed Morsi seorang muslim demokrat, presiden Mesir 2012-2013, dipenjarakan oleh tentera Mesir ketika coup de tat sehingga skrg."
+Terjemahane ing Basa Jawa:
+{{input_end}}
+{{output_start}}
+Mohamed Morsi wong muslim demokrat, presiden Mesir 2012-2013, dikunjoro dening tentoro Mesir nalika kudeta tekan sakniki.
+{{output_end}}
+
+=====
+
+{# example 5 #}
+{{input_start}}
+Ukara ing Basa Indonesia:"semua baik, lokasinya di tengah kota, yang perlu diperbaiki terkait layanan adalah : 1. ketersediaan sarapan (kami turun jam 9 kurang, nasgo abis dan roti tak ada serta meja kotor k/pelayan hanya 2 merangkap resepsionis) 2. lift tanpa alasan yg bisa dibenarkan dimatikan (padahal tdk ada perbaikan) shg saya yg terkilir dan ortu 80th harus via tangga."
+Terjemahane ing Basa Jawa:
+{{input_end}}
+{{output_start}}
+Kabeh apik, lokasine nag tengah kota, sing perlu didandani masalah layanan yaiku: 1. ketersedia ane sarapan (awak dewek medun jam 9 kurang, sego goreng entek ambek rotine ora ono ambek mejoe endut pelayane mok 2 ngerangkep resepsionis) 2. Lift tanpo alasan sing bener dipateni (padahal ora ono perbaikan) dadi aku sing kesleo ambek wong tuo sing 80 tahun kudu lewat tangga.
+{{output_end}}
+
+=====
+
+
+{# the claim will be filled in this block #}
+{% block input %}
+{{input_start}}
+Ukara ing Basa Indonesia: "{{ sent }}"
+Terjemahane ing Basa Jawa:
+{{input_end}}{% endblock %}
+

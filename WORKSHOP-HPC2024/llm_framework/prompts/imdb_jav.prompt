@@ -1,0 +1,71 @@
+{% block instruction %}
+{{instruction_start}}
+Golongake teks ing Basa Jawa iki miturut jenis sentimene "POSITIVE" utawa "NEGATIVE". Yen ukarae isine tanggapan ora setuju, nolak, kritik, lan respond negatif, outpute: "NEGATIVE". Saliyane iku, outpute: "POSITIVE"
+{{instruction_end}}
+{% endblock %}
+
+=====
+
+{# example 1 #}
+{{input_start}}
+Teks: "Aku mung ndelok film ing teater. Film kuwi ana pirang-pirang sing apik kanggo ngomong. Kareena arep \u00e9ntuk kecanduan lan pirang lagu kuwi. Itu. Film kuwi panc\u00e8n kecenduhan ing kab\u00e8h dha\u00e9rah. Sing sapa sing associ\u00e9 karo film kuwi bakal rusak ati, malah mumbai Indian (mung saiki Chennai wis nggawe nah semi-final). <br /><br />Nanging aku ngrasa luwih apik bab film kuwi yaiku aksi aksi. Saiki Bollywood iku ngupaya copy sc\u00e9ne aksi saka Hollywood. Nanging wong Hollywood nggunakk\u00e9 aksi sing digaw\u00e9 ing kono. Nanging Bollywood direktors iki ora nduw\u00e9 wektu sing cocog karo musik lan gambar tingkah."
+Sentimen:
+{{input_end}}
+{{output_start}}
+NEGATIVE
+{{output_end}}
+
+=====
+
+{# example 2 #}
+{{input_start}}
+Teks: "Aku seneng karo film. Ana wilayah aksi sing nggumun banget, tekan lan sing apik. Aku kusus\u00e9 seneng karo wicaksana sing ana semi truk ing kono. Ayat aksi sing mlebu.<br /><br />>Ayo ana wicaksana transisional sing difilm nganggo cara sing nyenengk\u00e9 kaya fotograf, warna luar biasa, utawa tengek sing menang. Uga film kuwi lungguh banget. Aku uga seneng karo wong sing jahat kuwi uga digambark\u00e9. Aku ngek\u00e8ki film 8 saka 10."
+Sentimen:
+{{input_end}}
+{{output_start}}
+POSITIVE
+{{output_end}}
+
+=====
+
+{# example 3 #}
+{{input_start}}
+Teks: "Aku ngguyu mlebu film koyo. Wong w\u00e9dok sing ninggalk\u00e9 bojon\u00e9 sakwis\u00e9 pirang - pirang taun urip bebojoan, wis rusak ing ngarep\u00e9 kantor tanah. Apa sing kelakon? Pengurus kantor keluar lan nawakk\u00e9 gaw\u00e9an!! Hilary! Banjur, kowe kenal wong w\u00e9dok loro sing arep mlaku. Iyah, iso lesbi! Ora ana sing bener ing iki \"Hiptime kanggo Wong w\u00e9dok sing ora ana sing luwih apik kanggo nindakk\u00e9 film\". Diyalog Clunky dialog sing kaya \"Aku ora p\u00e9ngin nggunakk\u00e9 uripku sing sithik ngrasa aku ngrasa kaya aku nduw\u00e9 kesempatan kanggo bungah lan ora nampa\" ora dibantu. Ana ibu sing sugih, sing ora ngganggu hubungan\u00e9 anak\u00e9."
+Sentimen:
+{{input_end}}
+{{output_start}}
+NEGATIVE
+{{output_end}}
+
+=====
+
+{# example 4 #}
+{{input_start}}
+Teks: "Kuwi gampang ditindakk\u00e9 film sing paling dinggo inn the Brooks cannon. Nanging, film kuwi panc\u00e8n ditresnani banget, dudu, lan nggat\u00e8kk\u00e9 kuwi ing critan\u00e9 wong - wong sing paling tradisional nggat\u00e8kk\u00e9 masyarakat kuwi panc\u00e8n nggumunk\u00e9 banget. Kuwi dudu Raja Fisher, ning ora cocok."
+Sentimen:
+{{input_end}}
+{{output_start}}
+POSITIVE
+{{output_end}}
+
+=====
+
+{# example 5 #}
+{{input_start}}
+Teks: "Aku nyewa DVD lan aku rumangsa gela merga Dawson lan Lugacy kuwi sungguh nek komentar DVD. Iki ora mung film sing \u00e8l\u00e8k, nanging kuwi salah siji film sing p\u00e9ngin dadi komentar sing gedh\u00e9 bab alam manungsa, ning ora sadhar n\u00e8k critan\u00e9 kuwi mung gener. Lagi, kuwi sithik sithik mung sithik bab masalah kuwi nganggo ak\u00e8h cara, lan tumindak karakter sing kerep dipercayake. Aku nganti ngomongke film sing kok \u00e9ntuk barang-barang saka jeneng\u00e9 n\u00e8k kowe ora nduw\u00e9 ak\u00e8h film/TV/ratiture/hidup sakdurung\u00e9 kow\u00e9 (Ngak tak jujur, aku wis nggawe gambar sing padha ing komiks)."
+Sentimen:
+{{input_end}}
+{{output_start}}
+NEGATIVE
+{{output_end}}
+
+=====
+
+
+{# the claim will be filled in this block #}
+{% block input %}
+{{input_start}}
+Teks: "{{ sent }}"
+Sentimen:
+{{input_end}}{% endblock %}
+

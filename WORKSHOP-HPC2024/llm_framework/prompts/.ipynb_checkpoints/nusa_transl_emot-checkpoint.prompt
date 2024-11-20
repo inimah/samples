@@ -1,0 +1,76 @@
+{% block instruction %}
+{{instruction_start}}
+Golongake ukara ing Basa Jawa iki miturut jenis emosi sing diekspresikno, yaiku: "anger", "fear", "happy", "love", "sadness". 
+Yen ukarae isine ekspresi nesu, outpute: "anger".
+Yen ukarae isine ekspresi wedi, outpute: "fear".
+Yen ukarae isine ekspresi seneng, outpute: "happy".
+Yen ukarae isine ekspresi tresno, outpute: "love".
+Yen ukarae isine ekspresi sedih utawa susah, outpute: "sadness".
+{{instruction_end}}
+{% endblock %}
+
+=====
+
+{# example 1 #}
+{{input_start}}
+Ukara: "Gaweyan kantor ing Malang iku rejeki. Dadi seksi sibuk gawe kanca-kanca sing mulih nang Malang, setaun ora mesthi bisa mulih sepisan, kuwi rejeki. Rejeki sing angel dibiji nganggo gaji nominal apa wae.. Alhamdulillah."
+Emosine:
+{{input_end}}
+{{output_start}}
+happy
+{{output_end}}
+
+=====
+
+{# example 2 #}
+{{input_start}}
+Ukara: "Kadang seneng ora terimo nag ndelok uripku ora koyok konco-koncoku sing mulus-mulus wae. Paling balesane doso-dosoku sakprene iki."
+Emosine:
+{{input_end}}
+{{output_start}}
+sadness
+{{output_end}}
+
+=====
+
+{# example 3 #}
+{{input_start}}
+Ukara: "Mung ibu sing tahan sujud suweeee banget nggo manjatke dongo. Mung ibu sing ben wengi ora absen tangi wengi nggo gantungke harapan neng Tuhan. Mung ibu sing sregep poso nahan napsu supoyo Allah sayang. Legi yo. Sayang banget, ibu."
+Emosine:
+{{input_end}}
+{{output_start}}
+love
+{{output_end}}
+
+=====
+
+{# example 4 #}
+{{input_start}}
+Ukara: "Pertanyaan sing biyen pas iku yo garai kesel... opo maneh nag dulur adoh sing takok... Untunge ora tak takoki balik: kapan opname?"
+Emosine:
+{{input_end}}
+{{output_start}}
+anger
+{{output_end}}
+
+=====
+
+{# example 5 #}
+{{input_start}}
+Ukara: "duwe trauma ngombe banyu galon. Soke merga galone kena srengenge langsung sadurunge dipundhut ibu. Mulane rasane beda lan pas tak ombe, aku langsung mukok."
+Emosine:
+{{input_end}}
+{{output_start}}
+fear
+{{output_end}}
+
+=====
+
+
+{# the claim will be filled in this block #}
+{% block input %}
+{{input_start}}
+Ukara: "{{ sent }}"
+Emosine:
+{{input_end}}{% endblock %}
+

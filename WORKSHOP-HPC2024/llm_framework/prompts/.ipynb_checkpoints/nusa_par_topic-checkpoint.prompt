@@ -1,0 +1,108 @@
+{% block instruction %}
+{{instruction_start}}
+Golongake teks paragraph ing Basa Jawa iki miturut jenis topike, yaiku: "business", "culture & heritage", "food & beverages", "leisures", "religion", "slice of life", "sports", "technology". 
+{{instruction_end}}
+{% endblock %}
+
+=====
+
+{# example 1 #}
+{{input_start}}
+Teks: "Kabeh kitab suci iku mesti ngulangno ajaran sing intine noto urip nang dunyo. Salah sijine yoiku kitab al quran. Kitab iki duweni pirang-pirang ajaran sing ancene kanggo noto uripe menungso ben ora kesasar nang rusake donyo sing wes akhir iki. Jarene kyai-kyai sing ngulangno ajaran sing ono nang jero al-quran, kitab suci iki termasuk kitab sing bener-bener mulyakno menungso soale, kabeh sing dicontokno iku cerito-cerito sing bakal noto uripe menengso ben slamet teko blahine urip nang dunyo ambek akhirat. Mangkane kitab suci iki sampek saiki isek dijogo ambek digawe poro ulama, guru ngaji, ambek liyan-liyane kanggo ngulang generasi enom soale isine iku pas terus ambek jaman sing terus maju iki."
+Topik:
+{{input_end}}
+{{output_start}}
+religion
+{{output_end}}
+
+=====
+
+{# example 2 #}
+{{input_start}}
+Teks: "Yogurt sakmenika kathah dipunsade kanthi regi ingkang awis wonten minimarket kaliyan supermarket. Boten kathah tiyang, mliginipun lare enem ingkang ngertos menawi Indonesia ugi gadhah yogurt tradisional. Asmanipun yogurt menika dadiah. Tiyang Minangkabau damel dadiah saking fermentasi susu maesa. Wadah kangge nyimpen dadiah inggih punika batang pring ingkang dipuntutup kangge godhong gedhang. Dadiah lumrahipun dipundahar kaliyan ampiang saking beras ketan. Salah satunggaling panggonan ingkang sadeyan ampiang dadiah inggih punika warung Lestari H. Minah wonten Bukittinggi. Dahar dadiah sae kangge kesarasan pencernaan. Daharan menika saged nyerap nutrisi kanthi optimal. Raosipun khas dadiah menika kecut lan wonten wanginipun batang pring. Sakmenika tiyang ingkang damel dadiah sampun langka. Pramila dadiah dados daharan tradisional ingkang eksklusif."
+Topik:
+{{input_end}}
+{{output_start}}
+food & beverages
+{{output_end}}
+
+=====
+
+{# example 3 #}
+{{input_start}}
+Teks: "Rumah adat yaiku bangunan omah sing digawe ambek ciri-ciri kusus sing ngelambangno karaktere wong adat kono. Omah iku yo dibangun polahe fungsine sing macem-macem contone koyok kanggo kumpulan, kanggo turu, ambek liyan-liyane sing iso gawe ngiyop wong nang adat iku maeng. Lah sing jenenge omah adat nang negoro iki iku pirang-pirang ambek macem-macem bentuke sing ancene iso digawe identitas suku, budaya ambek adat istiadat sing kelakon nang adat suku iku maeng. Sak liyane iku, omah adat saiki yo dadi identitas bangsa sing iso ngelambangno sopo bangsa iku, mari ngunu yo kenek di gawe ngenali adat iku wes pirang generasi utowo gawe identitase adat iku maeng."
+Topik:
+{{input_end}}
+{{output_start}}
+culture & heritage
+{{output_end}}
+
+=====
+
+{# example 4 #}
+{{input_start}}
+Teks: "Tenis utowo bal tempel iku olahraga sing didoleno antara rong pemain utowo antara rong pasang sing masing-masing rong pemain. Ben pemain iku nganggo raket gawe mukul bal raket. Tujuan permainan tenis iku gawe doleno bal nganggo cara tertentu ben lawan iku gak isok mbalekno bal mau. Tenis iku meh podo karo bulu tangkis, mek bedo jenis raket karo bal e tok. Tenis iku didoleno pertama kali antara tahun 1859 sampe 1865 nang Birmingham, Inggris. Turnamen tenis sing terkenal iku mulai teko Piala Davis, All-England, Roland Garros, AS Terbuka, ambek Australia Terbuka. Salah siji manfaat permainan tenis iku isok gawe ngelatih otot sikil ambek otot lengan."
+Topik:
+{{input_end}}
+{{output_start}}
+sports
+{{output_end}}
+
+=====
+
+{# example 5 #}
+{{input_start}}
+Teks: "Dodolan saka internet kuwi pancen gampang lan ora mbutuhake waktu akeh. Sing paling nyenengake saka dodolan ning internet kuwi para pedagang iki dadi luwih gampang golek pasar lan uga golek rujukan kanggo conto barang. Internet iki dadi panggonan sing bebas lan bisa dimodifikasi karo para pedagang lan bisa dari sarana sing nyenengake yen pengen golek penghasilan tambahan. Nanging, internet iki uga ora aman amarga akeh pedangang penipu sing seneng ngaku-aku barang sing didol karo pedagang liyane. Kamangka, yen kanca-kanca saiki dodolan ning internet, ana babagan sing perlu dikontrol yaiku keamanan barang ning internet lan kudu luwih waspada marang penipuan iki."
+Topik:
+{{input_end}}
+{{output_start}}
+business
+{{output_end}}
+
+=====
+
+
+{# example 6 #}
+{{input_start}}
+Teks: "Prosoku carane urip nang alam sing liar iku sejene pol ambek urip nang enggon biasane, mergane nang alam liar contone koyok nang gunung iku angele pol nag wong sing ora tau mungga gunung mabek ora tau urip nang kono. Nah Nag ancene pengen munggah gunung iku kudu duwe persiapan sing temen-temen matenge pol, awit teko pakean sampek panganan yo kudu disiapno ben ora klabakan soale nang gunung iku ademe pol ambek angel pangana kejobo mok godong-godongan tok. Terus yo biasane ono kewan-kewan sing iso blaheni yowo barang. Mangkane nag pengen jajal urip dang daerah gunung yo kudu persiapan sing mateng ben ora wedi ambek bingung mergo lingkungan sing anyar maeng."
+Topik:
+{{input_end}}
+{{output_start}}
+slice of life
+{{output_end}}
+
+=====
+
+
+{# example 7 #}
+{{input_start}}
+Teks: "Jaman saiki, wong-wong pasti podo nduwe speaker Bluetooth. Alat sing siji iki dinilai ringkes soale bentuke cilik dan isok digowo nang ndi ae, gampang dinggo, terus murah. Biasane speaker Bluetooth iku disambungno nang perangkat sing onok Bluetooth e, contohe hp. Cara nyambungno e iku koyok ngene. Siji, aktifno speaker e disik. Loro, petek tombol play gawe ngaktifno fungsi Bluetooth nang speaker iku. Telu, aktifno Bluetooth nang hp mu. Papat, nang hp mu, melbu nang menu Bluetooth. Limo, lakoni scanning perangkat. Enem, nek perangkat speaker Bluetooth iku wes nyantol, petek pairing device terus enteni sampe kesambung. Terakhir, tes speaker iku mau, carane maino lagu sembarang. Nek suarane metu teko speaker iku, berarti wes kesambung."
+Topik:
+{{input_end}}
+{{output_start}}
+technology
+{{output_end}}
+
+=====
+
+
+{# example 8 #}
+{{input_start}}
+Teks: "Kanggo wong sing seneng dolan ing laut kudu njajal phinisi utawa kapal sing bisa dituroni 3 dina 2 bengi. Salah sijinie yaiku phinisi sing ana ing Pulau Komodo. Phinisi iki nawarne macem-macem fasilitas. Ana kamar kanggo turu sing wis apik banget. Temboke wis dicat coklat, ana pawon lan panggon kanggo mangan, ana panggon kanggo santai, lan liyan-liyane. Ing pinishi iki uga bakalan seru amarga bisa ndelok srengenge yen metu lan mudun, ndelok apike langit nalika bengi, ndelok bintang sing akeh banget ing langit, lan ngerasakna sumilir angin ana ing tengah laut. Ora perlu wedi karo ombak, amarga yen ombake gedhe mesti ora pati kerasa amarga phinisi iki wis canggih lan nahkidae wis duwe pengalaman akeh."
+Topik:
+{{input_end}}
+{{output_start}}
+leisures
+{{output_end}}
+
+=====
+
+
+
+{# the claim will be filled in this block #}
+{% block input %}
+{{input_start}}
+Teks: "{{ sent }}"
+Topik:
+{{input_end}}{% endblock %}
+

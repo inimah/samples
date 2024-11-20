@@ -1,0 +1,102 @@
+{% block instruction %}
+{{instruction_start}}
+Golongake teks paragraph ing Basa Jawa iki miturut jenis emosi sing diekspresikno, yaiku: "angry", "disgusted", "fear", "happy", "sad", "shame", "surprise".
+Yen ukarae isine ekspresi nesu, outpute: "angry".
+Yen ukarae isine ekspresi wedi, outpute: "fear".
+Yen ukarae isine ekspresi seneng, outpute: "happy".
+Yen ukarae isine ekspresi jijik, outpute: "disgusted".
+Yen ukarae isine ekspresi isin utawa kisinan, outpute: "shame".
+Yen ukarae isine ekspresi sedih utawa susah, outpute: "sad".
+Yen ukarae isine ekspresi kaget, outpute: "surprise".
+{{instruction_end}}
+{% endblock %}
+
+=====
+
+{# example 1 #}
+{{input_start}}
+Teks: "Iki wis 7 dinane simbah kakunge Rani seda. Ing 7 dina iki keluwarga sing omahe adoh mulai padha persiapan balik. Rani wis ngerti yen 7 dinane saka sedane simbah kakung iki bakal sepi lan mesti bakal melasake simbah putri amarga mengko kesepian. Nanging Rani ya ora bisa nginep ning omah kuwi amarga sesuk kudu bali ning Jakarta kanggo kuliah. Ning slametan dia kepitu iki Rani uga ngewangi simba lan budhe-budhene reresik kamar lan lemari kanggo nggolek klambi tinggalane simbah kakung sing isih kena dinggo utawa disumbangake. Klambi-klambi iki bakal disumbangake ben dadi amal lan ganjaran sing apik kanggo simbah kakung utawa bisa migunani kanggo wong liya."
+Emosine:
+{{input_end}}
+{{output_start}}
+sad
+{{output_end}}
+
+=====
+
+{# example 2 #}
+{{input_start}}
+Teks: "Aku gelek kerungu akeh wong sing saiki pengaweane bedak-bedakno agama, terus sing srengen yo akeh soale rumongso agamane iku dienyek-enyek. Padal agama iku ora ngunu karepe. Terus opo agama iku? Agama iku yo kepercayaane wong nang gone pengeran ambek coro-coro sing dipercoyoi kanggo nyembah nang pengeran. Cara iki yo akeh sak pirang-pirang ambek bedo-bedo, terus agama iku yo ono pirang, pirang koyok islam, hindu, budha, kristen, konghucu, ambek liyan-liyane. Kabeh iku tujuane podo nanggone pengeran. Nah sing garai bedo yaiku carane nyembah ambek dalane nang gone pngeran iku tok. Mangkane wes ora atek digawe rame, cukup aturen awake dewe wes bener opo durung ambek sing bok belajari iku."
+Emosine:
+{{input_end}}
+{{output_start}}
+angry
+{{output_end}}
+
+=====
+
+{# example 3 #}
+{{input_start}}
+Teks: "Idu iku masio ketok ora endut, tapi akeh wong sing ngarani iku termasuk barang sing paling jemberi ambek ora pantes dijemok. Opo maneh nak idu iku maeng teko lambene wong liyo yo tambah jemberine pol. Mangkane nak ono wong jember kenek idu iku wes lumrah mergo iku termasuk perkoro sing eleke pol kanggo wong sing kenek idu maeng. Nah akeh-akeh wong sing jijik ambek perkoro iku maeng mergo deke iku jember ambek ambune maeng sing angel ilang-ilangane. Nah teko perkoro iku maeng mangkane kudu iso nag buak idu iku ojo sampek kenek wong liyo polahe iso dadekno wong sing kenek iku atine loro. Dadi nag iso idune nang nggon sing sekirane ora ono wong."
+Emosine:
+{{input_end}}
+{{output_start}}
+disgusted
+{{output_end}}
+
+=====
+
+{# example 4 #}
+{{input_start}}
+Teks: "Tahun 2020 pas sakdurunge covid teko nang indonesia, Aku dijak koncoku sing oleh penghargaan soale dadi juara nag lomba sing makili kampus nang kementerian pendidikan kota gudeg. Tapi sak durunge iku koncoku senenge pol soale oleh penghargaan sing ora gesongko-songko soale bocahe melok lomba iku polahe senengane nulis. Tapi yo jelas seneng lah masio ora niat ngolehno penghargaan. Opo maneh koncoku asline yo seneng ambek nulis yo tambah girange megilan. Sak liyane iku, koncoku yo oleh penghargaan sisan teko fakultas soale wes banggakno fakultas gawe lomba sing diadakno antar kampus se jawa tengah. Mari ngunu koncoku yo oleh hadiah mesisan teko gone rektor. Wes enake pol."
+Emosine:
+{{input_end}}
+{{output_start}}
+happy
+{{output_end}}
+
+=====
+
+{# example 5 #}
+{{input_start}}
+Teks: "Biyen, pas aku kerep latian tari neng sanggarku, aku lan konco-koncoku ora duwe wektu luang sing okeh. Wektune awak dhewe dienggo garap tugas kuliah utowo laperan lan neng wektu selo awak dhewe nganggo kui kanggo maksimalke latian. Latiane kui iso ben dino tekan dino Sebtu karo Minggu. Termasuk pas tanggal abang, awak dhewe tetep latian. Pas kui, ono sing arep ulang taun. Sebagai salah siji koncone, ora mungkin awak dhewe ngebiarke dino spesiale liwet ngono wae. Dadi, awak dhewe rencana tuku kue ulang taun kanggo dheweke. Awak dhewe arep gawe kejutan cilik-cilikan bubar latian. Pas dheweke krungu lagu slamet ulang taun lan kuene, dheweke seneng banget. Awak dhewe uga dadi seneng delok konco dhewe sing siji kui seneng."
+Emosine:
+{{input_end}}
+{{output_start}}
+surprise
+{{output_end}}
+
+=====
+
+
+{# example 6 #}
+{{input_start}}
+Teks: "Utang yoiku termasuk nyelang duwek nang wong liyo terus pas balekno maeng iku duweke maleh nambah. Nah perkoro maeng iku iso ae dadekno wong sing ngelakoni perkoro iku maeng maleh isin mergo ono sing nganggep perkoro iku termasuk aib nang uripe. Nah contohne wong sing nganggep iku maeng dadi aib yoiku wong sing biasane dianggep sugeh ambek wong sing ono nang pinggir-pinggire mari ngunu konangan utang nang wong liyo contohne koyok wong Bank ambek liyane maeng. Terus sing garai isin iku maeng asline yo ora mergo utange maeng. Tapi yo martabate maeng sing wes kadung apik nang motone wong akeh, tapi polahe perkoro sing ora kekiro akhire utang maeng."
+Emosine:
+{{input_end}}
+{{output_start}}
+shame
+{{output_end}}
+
+=====
+
+{# example 7 #}
+{{input_start}}
+Teks: "Kabeh wong kui duwe trauma dhewe-dhewe. Ono wong sing iso ngendalike rasa wedine kui lan uga ono sing durung. Awak dhewe kudu ngati-ngati yen awak dhewe ngomong karo wong, opo meneh wong sing awak dhewe durung kenal banget. Awak dhewe kudu ngati-ngati milih bahan omongan supoyo, awak dhewe ora ngemantik traumane kui. Supoyo kui ora kedaden, ono beberapa perkoro sing kudu awak dhewe gateke. Sing kesiji, awak dhewe ora usah ngomong perkoro-perkoro sing sensitif yen ora diperluke. Luwih mending, awak dhewe golek topik omongan sing enteng-enteng wae. Sing keloro, yen misale awak dhewe terlanjur ngomong perkoro sing sensitif, awak dhewe langsung jaluk ngapura, lan ngomong ora opo-opo yen dheweke ora gelem bahas utowo ngelanjutke bahasan kui."
+Emosine:
+{{input_end}}
+{{output_start}}
+fear
+{{output_end}}
+
+=====
+
+
+
+{# the claim will be filled in this block #}
+{% block input %}
+{{input_start}}
+Teks: "{{ sent }}"
+Emosine:
+{{input_end}}{% endblock %}
+

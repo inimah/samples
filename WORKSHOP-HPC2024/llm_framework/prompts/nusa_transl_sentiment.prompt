@@ -1,0 +1,71 @@
+{% block instruction %}
+{{instruction_start}}
+Golongake ukara ing Basa Jawa iki miturut jenis sentimene "POSITIVE" utawa "NEGATIVE". Yen ukarae isine tanggapan ora setuju, nolak, kritik, lan respond negatif, outpute: "NEGATIVE". Saliyane iku, outpute: "POSITIVE"
+{{instruction_end}}
+{% endblock %}
+
+=====
+
+{# example 1 #}
+{{input_start}}
+Ukara: "Nomer 22 AC panas ora keroso, turu wae sampek keringeten"
+Sentimen:
+{{input_end}}
+{{output_start}}
+NEGATIVE
+{{output_end}}
+
+=====
+
+{# example 2 #}
+{{input_start}}
+Ukara: "Kaos polo katun pique jinis iki cocok kanggo seragam kampus, kantor, remaja jaman saiki, mampir kabeh"
+Sentimen:
+{{input_end}}
+{{output_start}}
+POSITIVE
+{{output_end}}
+
+=====
+
+{# example 3 #}
+{{input_start}}
+Ukara: "Paladenane uwis apik, nanging jedinge ora resik, ana kerak ing jubine lan wcne. Cangkir teh e uga isih ana kerake ngedibel... Sarapane kurang sebanding karo regone"
+Sentimen:
+{{input_end}}
+{{output_start}}
+NEGATIVE
+{{output_end}}
+
+=====
+
+{# example 4 #}
+{{input_start}}
+Ukara: "+kamare lumayan amba, murah, sarapane maneka warna, ana kulkas, teko banyu panas, pancuran panas, AC adhem, panggone strategis, lift - channel tv sithik, ana coro cilik 1, dina 1-2 ora entuk snack, dina 4 ora diresiki tur ora entuk ngombe+snack, yen nyeluk petugas hotel suweeeeeee tapi kurang luwih apik, aku arep nginep meneh ana kene merga kamare gedhe, resik, murah, sarapane enak"
+Sentimen:
+{{input_end}}
+{{output_start}}
+POSITIVE
+{{output_end}}
+
+=====
+
+{# example 5 #}
+{{input_start}}
+Ukara: "Gratis wifi nguciwake merga ora isa dinggo Instalasi listrik kurang rapi"
+Sentimen:
+{{input_end}}
+{{output_start}}
+NEGATIVE
+{{output_end}}
+
+=====
+
+
+{# the claim will be filled in this block #}
+{% block input %}
+{{input_start}}
+Ukara: "{{ sent }}"
+Sentimen:
+{{input_end}}{% endblock %}
+
